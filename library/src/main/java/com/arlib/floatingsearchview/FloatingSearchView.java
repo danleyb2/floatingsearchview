@@ -1737,6 +1737,10 @@ public class FloatingSearchView extends FrameLayout {
         this.mOnClearSearchActionListener = listener;
     }
 
+    public SearchInputView getSearchInput() {
+        return mSearchInput;
+    }
+
     private void openMenuDrawable(final DrawerArrowDrawable drawerArrowDrawable, boolean withAnim) {
         if (withAnim) {
             ValueAnimator anim = ValueAnimator.ofFloat(0.0f, 1.0f);
